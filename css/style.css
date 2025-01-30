@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.input-container {
+    position: relative;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 250%;
+    padding: 12px;
+    padding-top: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+    transition: 0.3s ease-in-out;
+    pointer-events: none; /* Prevent label from being selectable */
+}
+
+/* Move label up when input is focused or has text */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 20px;
+    border: 2px solid blue;  /* Blue border */
+    background-color: white; /* White background */
+    color: blue; /* Blue text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-left: 15px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+}
+button:hover a{
+    color: white;
+}
+/* Remove underline from <a> inside button */
+button a {
+    color: blue;
+    text-decoration: none;
+}
+.left {
+    width: 50%;
+    background-color: #fff;
+    padding-left: 6%;
+}
+.right {
+    background-color: #e5e5e5;
+    width: 50%;
+}
+.login {
+    display: flex;
+    height: 100vh;
+}
+.login h2 {
+    padding-top: 20px;
+    color: blue;
+    padding-bottom: 3em;
+}
+.big{
+    font-size: 38px;
+    font-weight: 600;
+    color: blue;
+}
+.small {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 40px;
+}
+.short {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.short a{
+    padding-right: 55px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    border-bottom: 3px solid blue;
+}
+.image-container img{
+    width: 95%;
+
+}
